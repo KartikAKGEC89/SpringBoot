@@ -1,0 +1,66 @@
+Spring and Spring Boot :-
+Spring and Spring Boot are both Java frameworks that are used to build applications.
+Think of them as toolkits that help developers build and structure their code in an
+efficient and scalable way.
+
+Spring is a powerful, comprehensive framework that gives you a lot of flexibility,
+but can be a bit overwhelming to set up. Spring Boot is a more opinionated, streamlined version
+of Spring that comes with a lot of built-in features to help you get started quickly and easily.
+
+*****Spring Initializr :-
+When starting a new Spring Boot application, Spring Initializr is the recommended first step.
+You can think of Spring Initializr like a shopping cart for all of the dependencies your
+application might need. It will quickly and easily generate a complete, ready-to-run Spring
+Boot application.
+
+
+***API Contracts
+   The software industry has adopted several patterns for capturing agreed upon API behavior in
+   documentation and code. These agreements are often called "contracts". Two examples include
+   Consumer Driven Contracts and Provider Driven Contracts. We'll provide resources for these
+   patterns, but won't discuss them in detail in this course. Instead, we'll discuss a lightweight
+    concept called API contracts.
+
+   We define an API contract as a formal agreement between a software provider and a consumer
+   that abstractly communicates how to interact with each other. This contract defines how API
+   providers and consumers interact, what data exchanges looks like, and how to communicate
+   success and failure cases.
+
+   Example ---->
+
+
+   Request
+     URI: /cashcards/{id}
+     HTTP Verb: GET
+     Body: None
+
+   Response:
+     HTTP Status:
+       200 OK if the user is authorized and the Cash Card was successfully retrieved
+       401 UNAUTHORIZED if the user is unauthenticated or unauthorized
+       404 NOT FOUND if the user is authenticated and authorized but the Cash Card cannot be found
+     Response Body Type: JSON
+     Example Response Body:
+       {
+         "id": 99,
+         "amount": 123.45
+       }
+
+
+**** What Is JSON?
+     JSON (Javascript Object Notation) provides a data interchange format that represents the
+     particular information of an object in a format that you can easily read and understand.
+     We'll use JSON as our data interchange format for the Family Cash Card API.
+
+     Other popular data formats include YAML (Yet Another Markup Language) and XML
+     (Extensible Markup Language). When compared to XML, JSON reads and writes quicker,
+     is easier to use, and takes up less space. You can use JSON with most modern programming
+     languages and on all major platforms. It also works seamlessly with Javascript-based
+     applications.
+
+
+     Example -->
+     {
+       "id": 99,
+       "amount": 123.45
+     }
