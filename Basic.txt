@@ -1,0 +1,2 @@
+common properties is used to check the key and property and used to change the value 
+Application properties is used to chnge the some Application property
